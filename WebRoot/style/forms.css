@@ -1,0 +1,436 @@
+
+@charset "utf-8";
+fieldset {
+    border: 1px solid #CAD6E6;
+}
+legend {
+}
+textarea {
+    border: 1px solid #CAD6E6;
+}
+* html input.text_nor {
+    border: 1px solid #CCCCCC;
+    padding: 3px 0;
+}
+* > input[type="text"], * > input[type="password"] {
+    border: 1px solid #CCCCCC;
+}
+* > input[type="text"]:hover, * > input[type="password"]:hover {
+    background: none repeat scroll 0 0 #FFFFEE;
+    border: 1px solid #999999;
+}
+* > input[type="text"]:focus, * > input[type="password"]:focus {
+    background: none repeat scroll 0 0 #FFFFEE;
+    border: 1px solid #999999;
+}
+input.text_tishi {
+    border: 1px solid #CCCCCC;
+    color: #CCCCCC;
+}
+input.text_nobd {
+}
+input.text_nobd:hover {
+}
+input.text_udline {
+    border-bottom: 1px solid #CCCCCC;
+}
+input.text_udline:hover {
+    border-bottom: 1px solid #CCCCCC;
+}
+input.text_dashed {
+    border-bottom: 1px dashed #CCCCCC;
+}
+input.text_dashed:hover {
+    border-bottom: 1px dashed #CCCCCC;
+}
+form_button, .form_button {
+    background: url("images/form_button_nor.gif") repeat-x scroll left top #ECF1F7;
+    color: #000000;
+}
+form_button:hover, .form_buttonStyle:hover, .form_button:hover {
+    background: url("images/form_button_mov.gif") repeat-x scroll left top #ECF1F7;
+    color: #000000;
+}
+* > form_button, * > .form_buttonStyle, * > .form_button {
+    border: 1px solid #FFFFFF !important;
+    outline: 1px solid #8AA4C4;
+}
+* html form_button, * html .form_buttonStyle, * html .form_button {
+    border: 1px solid #8AA4C4;
+}
+* + html form_button, * + html .form_buttonStyle, * + html .form_button {
+    border: 1px solid #8AA4C4 !important;
+}
+.form_buttonbox ul li form_button, .form_buttonbox ul li input {
+    background: url("images/form_button.gif") no-repeat scroll 0 0 transparent;
+}
+.form_buttonbox ul li form_button:hover, .form_buttonbox ul li input:hover {
+    background: url("images/form_button.gif") no-repeat scroll 0 0 transparent;
+    color: #0000FF;
+}
+form_button, .form_button {
+    color: #000000;
+    cursor: pointer;
+    height: 20px;
+    letter-spacing: 0.2em;
+    margin: 0 2px;
+    padding: 0 4px;
+}
+form_button:hover, .form_button:hover {
+    color: #000000;
+    cursor: pointer;
+    height: 20px;
+    letter-spacing: 0.2em;
+    margin: 0 2px;
+    padding: 0 4px;
+}
+* > form_button, * > .form_button {
+    height: 20px;
+}
+* html form_button, * html .form_button {
+    height: 20px;
+}
+.form_buttonbox ul li form_button, .form_buttonbox ul li input, .form_buttonbox ul li a {
+    background: url("images/form_button.gif") no-repeat scroll 0 0 transparent;
+    border-width: 0 !important;
+    cursor: pointer;
+    height: 19px !important;
+    letter-spacing: 0 !important;
+    margin: 0 !important;
+    outline-width: 0;
+    padding-left: 1.5em;
+    padding-right: 0 !important;
+    text-align: left;
+}
+.form_buttonbox ul li a {
+    padding-right: 4px !important;
+}
+* > .form_buttonbox ul li form_button, * > .form_buttonbox ul li input {
+    text-align: left;
+}
+.form_buttonbox ul li form_button:hover, .form_buttonbox ul li input:hover {
+}
+.form_buttonbox .btn_none {
+    background-position: -250px 0;
+}
+.form_buttonbox .btn_none:hover {
+    background-position: -250px 0;
+}
+.form_buttonbox .btn_zj {
+    background-position: -50px 0;
+}
+.form_buttonbox .btn_zj:hover {
+    background-position: -50px 0;
+}
+.form_buttonbox .btn_xjwjj {
+    background-position: 200px 0;
+}
+.form_buttonbox .btn_xjwjj:hover {
+    background-position: -200px 0;
+}
+.form_buttonbox .btn_xg {
+    background-position: -50px -18px;
+}
+.form_buttonbox .btn_xg:hover {
+    background-position: -50px -18px;
+}
+.form_buttonbox .btn_sc {
+    background-position: -50px -36px;
+}
+.form_buttonbox .btn_sc:hover {
+    background-position: -50px -36px;
+}
+.form_buttonbox .btn_cx {
+    background-position: -50px -54px;
+}
+.form_buttonbox .btn_cx:hover {
+    background-position: -50px -54px;
+}
+.form_buttonbox .btn_tj {
+    background-position: -50px -72px;
+}
+.form_buttonbox .btn_tj:hover {
+    background-position: -50px -72px;
+}
+.form_buttonbox .btn_dr {
+    background-position: -50px -90px;
+}
+.form_buttonbox .btn_dr:hover {
+    background-position: -50px -90px;
+}
+.form_buttonbox .btn_dc {
+    background-position: -50px -108px;
+}
+.form_buttonbox .btn_dc:hover {
+    background-position: -50px -108px;
+}
+.form_buttonbox .btn_shangc {
+    background-position: -50px -126px;
+}
+.form_buttonbox .btn_shangc:hover {
+    background-position: -50px -126px;
+}
+.form_buttonbox .btn_xz {
+    background-position: -50px -144px;
+}
+.form_buttonbox .btn_xz:hover {
+    background-position: -50px -144px;
+}
+.form_buttonbox .btn_dy {
+    background-position: -50px -162px;
+}
+.form_buttonbox .btn_dy:hover {
+    background-position: -50px -162px;
+}
+.form_buttonbox .btn_bc {
+    background-position: -50px -180px;
+}
+.form_buttonbox .btn_bc:hover {
+    background-position: -50px -180px;
+}
+.form_buttonbox .btn_fh {
+    background-position: -50px -198px;
+}
+.form_buttonbox .btn_fh:hover {
+    background-position: -50px -198px;
+}
+.form_buttonbox .btn_sx {
+    background-position: -50px -216px;
+}
+.form_buttonbox .btn_sx:hover {
+    background-position: -50px -216px;
+}
+.form_buttonbox .btn_ck {
+    background-position: -50px -234px;
+}
+.form_buttonbox .btn_ck:hover {
+    background-position: -50px -234px;
+}
+.form_buttonbox .btn_sz {
+    background-position: -50px -252px;
+}
+.form_buttonbox .btn_sz:hover {
+    background-position: -50px -252px;
+}
+.form_buttonbox .btn_fs {
+    background-position: -50px -270px;
+}
+.form_buttonbox .btn_fs:hover {
+    background-position: -50px -270px;
+}
+.form_buttonbox .btn_sq {
+    background-position: -50px -288px;
+}
+.form_buttonbox .btn_sq:hover {
+    background-position: -50px -288px;
+}
+.form_buttonbox .btn_sh {
+    background-position: -50px -306px;
+}
+.form_buttonbox .btn_sh:hover {
+    background-position: -50px -306px;
+}
+.form_buttonbox .btn_qk {
+    background-position: -50px -324px;
+}
+.form_buttonbox .btn_qk:hover {
+    background-position: -50px -324px;
+}
+.form_buttonbox .btn_csh {
+    background-position: -50px -342px;
+}
+.form_buttonbox .btn_csh:hover {
+    background-position: -50px -342px;
+}
+.form_buttonbox .btn_mm {
+    background-position: -50px -360px;
+}
+.form_buttonbox .btn_mm:hover {
+    background-position: -50px -360px;
+}
+.form_buttonbox .btn_mmxg {
+    background-position: -50px -378px;
+}
+.form_buttonbox .btn_mmxg:hover {
+    background-position: -50px -378px;
+}
+.form_buttonbox .btn_shengc {
+    background-position: -200px -72px;
+}
+.form_buttonbox .btn_shengc:hover {
+    background-position: -200px -72px;
+}
+.form_buttonbox .btn_sjfb {
+    background-position: -200px -90px;
+}
+.form_buttonbox .btn_sjfb:hover {
+    background-position: -200px -90px;
+}
+.form_buttonbox .btn_px {
+    background-position: -200px -108px;
+}
+.form_buttonbox .btn_px:hover {
+    background-position: -200px -108px;
+}
+.form_buttonbox .btn_sdfb {
+    background-position: -200px -126px;
+}
+.form_buttonbox .btn_sdfb:hover {
+    background-position: -200px -126px;
+}
+.form_buttonbox .btn_sf {
+    background-position: -200px -144px;
+}
+.form_buttonbox .btn_sf:hover {
+    background-position: -200px -144px;
+}
+.form_buttonbox .btn_tg {
+    background-position: -200px -162px;
+}
+.form_buttonbox .btn_tg:hover {
+    background-position: -200px -162px;
+}
+.form_buttonbox .btn_btg {
+    background-position: -200px -180px;
+}
+.form_buttonbox .btn_btg:hover {
+    background-position: -200px -180px;
+}
+.form_buttonbox .btn_cq {
+    background-position: -200px -198px;
+}
+.form_buttonbox .btn_tz {
+    background-position: -200px -216px;
+}
+.form_buttonbox .btn_qx {
+    background-position: -200px -234px;
+}
+.form_buttonbox .btn_qr {
+    background-position: -200px -252px;
+}
+.form_buttonbox .btn_bj {
+    background-position: -200px -270px;
+}
+.form_buttonbox .btn_cfjxb {
+    background-position: -200px -288px;
+}
+.form_buttonbox .btn_fp {
+    background-position: -200px -306px;
+}
+.form_buttonbox .btn_cb {
+    background-position: -200px -324px;
+}
+.form_buttonbox .btn_fb {
+    background-position: -200px -342px;
+}
+.form_buttonbox .btn_bkbm {
+    background-position: -200px -360px;
+}
+.form_buttonbox .btn_bm {
+    background-position: -200px -378px;
+}
+.form_buttonbox .btn_cj {
+    background-position: -200px -396px;
+}
+.form_buttonbox .btn_shenq {
+    background-position: -200px -414px;
+}
+.ico-word {
+    background: url("images/icons.gif") no-repeat scroll -50px -200px transparent;
+}
+.datelist {
+    border: 1px solid #CCCCCC;
+}
+.datelist caption {
+}
+.datelist thead th, .datelist thead td, .datelisthead td, .datelisthead td:hover {
+    background: url("../images/thead.gif") repeat-x scroll left bottom #FEFEFE;
+    border-bottom: 1px solid #CCCCCC;
+    border-right: 1px solid #CCCCCC;
+}
+.datelist thead tr:hover {
+}
+.datelist th, .datelist td {
+    color: #000000;
+}
+.datelist tbody td, .datelist tbody th {
+    border-bottom: 1px solid #CCCCCC;
+    border-right: 1px solid #CCCCCC;
+}
+.datelist tr:hover {
+    background: none repeat scroll 0 0 #EDE8E8;
+}
+.datelist tr.alt {
+    background: none repeat scroll 0 0 #F8F7F7;
+}
+.datelist tr.current {
+}
+.datelist th a, .datelist td a {
+    color: #0000FF !important;
+}
+.formlist, .opentable {
+    border: 1px solid #C1D1DB;
+}
+.formlist caption {
+    color: #FA4C00;
+}
+.formlist th, .formlist td, .opentable th, .opentable td {
+    background: none repeat scroll 0 0 #F2F6FB;
+    border: 1px solid #C1D1DB;
+    color: #5F7485;
+}
+.formlist th, .opentable th {
+    text-align: right;
+}
+.formlist td:hover, .opentable td:hover {
+    background: none repeat scroll 0 0 #E8EEF7;
+}
+.formlist label.heading {
+}
+.blacktab {
+    border: 1px solid #000000;
+}
+.blacktab th, .blacktab td {
+    border: 1px solid #000000;
+    color: #000000;
+}
+.redtab {
+    border: 1px solid red;
+}
+.redtab caption {
+    color: red;
+}
+.redtab th, .redtab td {
+    border: 1px solid red;
+    color: red;
+}
+.redtab th {
+}
+.redtab input {
+    border-bottom: medium none #000000;
+}
+.nowrap td, .nowrap th {
+}
+.pre th, .pre th {
+}
+.wordbreak {
+    word-break: break-all;
+}
+.navbug {
+    height: 800px;
+    left: 0;
+    position: absolute;
+    top: 0;
+    visibility: inherit;
+    width: 800px;
+    z-index: -999;
+}
+.navbug1 {
+    height: 350px;
+    left: 0;
+    position: absolute;
+    top: 0;
+    visibility: inherit;
+    width: 800px;
+    z-index: -999;
+}

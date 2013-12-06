@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE struts PUBLIC "-//Apache Software Foundation//DTD Struts Configuration 2.1//EN" "http://struts.apache.org/dtds/struts-2.1.dtd">
+<struts>
+
+	<constant name="struts.devMode" value="true" />
+	<constant name="struts.i18n.encoding" value="UTF-8" />
+	<constant name="struts.multipart.maxSize" value="60971520"/>
+	<package name="ajax" extends="json-default" namespace="/ajax">
+		<action name="LoginAction" class="tk.sweetvvck.web.controller.LoginAction">
+			<result type="chain">
+            	<param name="namespace">/</param> 
+            	<param name="setContentType">application/json;charset=UTF-8</param>
+			</result>
+			<result name="error" type="json">
+            	<param name="setContentType">application/json;charset=UTF-8</param>
+				<param name="root">message</param>
+			</result>
+			<result name="pass" type="json">
+            	<param name="setContentType">application/json;charset=UTF-8</param>
+				<param name="root">message</param>
+			</result>
+		</action>
+	</package>
+	<package name="class" extends="struts-default" namespace="/">
+		<action name="RedirectAction" class="tk.sweetvvck.web.ui.RedirectAction" >
+			<result>
+				/WEB-INF/jsp/login.jsp
+			</result>
+			<result name="addManager" type="redirectAction">
+				sys
+			</result>
+			<result name="appoint" type="redirectAction">
+				sys
+			</result>
+			<interceptor-ref name="defaultStack"></interceptor-ref>
+		</action>
+		
+		<action name="sys" class="tk.sweetvvck.web.ui.RedirectAction" method="sysLogin">
+			<result>
+				/WEB-INF/jsp/system.jsp
+			</result>
+		</action>
+		
+		<action name="showHonorAction" class="tk.sweetvvck.web.ui.RedirectAction" method="showHonor">
+			<result>
+				/WEB-INF/jsp/showHonor.jsp
+			</result>
+		</action>
+		
+		<action name="showActivityAction" class="tk.sweetvvck.web.ui.RedirectAction" method="showActivity">
+			<result>
+				/WEB-INF/jsp/showActivity.jsp
+			</result>
+		</action>
+		
+		<action name="RedirectActionToUploadView" class="tk.sweetvvck.web.ui.RedirectAction"
+			method="toUploadView">
+			<result>
+				/WEB-INF/jsp/upload.jsp
+			</result>
+		</action>
+		
+		<action name="RedirectActionToShowPhotoView" class="tk.sweetvvck.web.ui.RedirectAction"
+			method="toShowPhotoView">
+			<result>
+				/WEB-INF/jsp/showPhoto.jsp
+			</result>
+		</action>
+		
+		<action name="RedirectActionToShowAlbumView" class="tk.sweetvvck.web.ui.RedirectAction"
+			method="toShowAlbumView">
+			<result>
+				/WEB-INF/jsp/showAlbum.jsp
+			</result>
+		</action>
+		
+		<action name="AddAlbumAction" class="tk.sweetvvck.web.controller.AddAlbumAction">
+			<result>
+				/WEB-INF/jsp/upload.jsp
+			</result>
+		</action>
+		<action name="LoginAction" class="tk.sweetvvck.web.controller.LoginAction">
+			<result>
+				/WEB-INF/jsp/Home.jsp
+			</result>
+			<result name="error">
+				/WEB-INF/jsp/login.jsp
+			</result>
+		</action>
+	</package>
+
+	<package name="file" namespace="/" extends="json-default">
+		<action name="upload" class="tk.sweetvvck.web.controller.UploadPhotoAction">
+			<result name="input">/WEB-INF/jsp/uploadError.jsp</result>
+			<!-- <result name="success">/upload_success.jsp</result> -->
+			<result name="success">
+				/WEB-INF/jsp/Home.jsp
+			</result>
+			<result name="modifyPhoneNum" type="json">
+				<param name="root">phoneNum</param>
+				<param name="setContentType">application/json;charset=UTF-8</param>
+			</result>
+			<result name="modifyMail" type="json">
+				<param name="setContentType">application/json;charset=UTF-8</param>
+				<param name="root">mail</param>
+			</result>
+			<result name="modifyAvatar" type="json">
+				<param name="setContentType">application/json;charset=UTF-8</param>
+				<param name="root">avatar</param>
+			</result>
+			<result name="addStudentInfo" type="json">
+				<param name="setContentType">application/json;charset=UTF-8</param>
+				<param name="root">addStudent</param>
+			</result>
+			<result name="deleteStudentInfo" type="json">
+				<param name="setContentType">application/json;charset=UTF-8</param>
+				<param name="root">optStudentNum</param>
+			</result>
+			<param name="visitor">host</param>
+			<interceptor-ref name="fileUpload">
+				<param name="maximumSize">60971520</param>
+				<param name="allowedTypes">image/bmp,image/x-png,image/png,image/gif,image/jpeg,image/jpg,image/pjpeg</param>
+				<!--大家可以设置成自己的配置，想文件类型和大小等限制 -->
+				<!-- <param name="maximumSize">2097152</param>单位是字节 2M （2097152B） -->
+				<!-- <param name="allowedTypes">image/bmp,image/x-png,image/png,image/gif,image/jpeg,image/jpg,image/pjpeg</param> -->
+				<!-- -->
+				<!-- 容许文件类型为doc,ppt,xls,pdf,txt,java -->
+				<!-- -->
+			</interceptor-ref>
+			<interceptor-ref name="defaultStack"></interceptor-ref>
+		</action>
+	</package>
+</struts>    

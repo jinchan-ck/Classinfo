@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project-module
+  type="WEB"
+  name="ClassInfoManagementSystem_git"
+  id="myeclipse.1357543519572"
+  context-root="/ClassInfo"
+  j2ee-spec="6.0"
+  archive="ClassInfoManagementSystem_git.war">
+  <attributes>
+    <attribute name="webrootdir" value="WebRoot" />
+  </attributes>
+</project-module>
+
